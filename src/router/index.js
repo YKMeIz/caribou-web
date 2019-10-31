@@ -18,12 +18,30 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
+  {
+    path: '/help',
+    name: 'help',
+    component: () => import('../views/Help.vue'),
+  },
+  {
+    path: '/404',
+    name: 'NotFound',
+    component: () => import('../views/NotFound.vue'),
+  },
+  {
+    path: '/:pixiv_id',
+    name: 'illust',
+    component: () => import('../views/Illust.vue'),
+  },
 ];
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  },
 });
 
 export default router;
