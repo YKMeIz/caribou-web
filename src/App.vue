@@ -30,4 +30,15 @@ export default {
 .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
   opacity: 0;
 }
+@media (prefers-color-scheme: dark) {
+  #app, .empty {
+    color: #FDFDFD !important;
+    background-color: #121212 !important;
+  }
+
+  code, input, .input-group-addon, .label {
+    color: #FDFDFD !important;
+    background-color: #303742 !important;
+  }
+}
 </style>

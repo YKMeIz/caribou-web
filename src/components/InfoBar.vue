@@ -10,8 +10,7 @@
       <section class="navbar-section">
         <router-link class="text-light lang-ja" lang="ja" to="/help">使用幫助</router-link>
         <router-link class="text-light lang-ja" lang="ja" to="/about">其它說明</router-link>
-        <router-link class="text-light lang-ja" lang="ja"
-        to="//github.com/YKMeIz/caribou">GitHub</router-link>
+        <a class="text-light lang-ja" lang="ja" href="//github.com/YKMeIz/caribou">GitHub</a>
       </section>
     </header>
     </div>
