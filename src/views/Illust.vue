@@ -85,11 +85,12 @@ export default {
   },
   methods: {
     fetchData() {
-      fetch(`//localhost:9090/${this.$route.params.pixiv_id}`, {
+      fetch(`//localhost:9090/${this.$route.params.pixiv_id}.json`, {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, *cors, same-origin
         headers: {
           Accept: 'application/json',
+          'Content-Type': 'application/json',
         },
       }).then((resp) => {
         resp
