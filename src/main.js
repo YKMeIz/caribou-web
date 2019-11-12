@@ -1,8 +1,8 @@
 import Vue from 'vue';
 import App from './App.vue';
 import router from './router';
-// import './spectre.scss';
-import 'spectre.css';
+import './spectre.scss';
+// import 'spectre.css';
 
 Vue.config.productionTip = false;
 

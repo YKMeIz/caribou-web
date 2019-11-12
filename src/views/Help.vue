@@ -37,7 +37,7 @@
         <pre class="code" data-lang="bash"><code>curl --header "Accept: application/json" https://pximg.ykz.dev/73869218</code></pre>
         <p class="lang-zh-hans">兩者返回的內容是一樣的：</p>
         <pre class="code" data-lang="json"><code>{
-   "Title":"嫌パン小説 第4-4話「よみがえり」",
+   "title":"嫌パン小説 第4-4話「よみがえり」",
    "id":"73869218",
    "description":"小説本文はこちら→https://ncode.syosetu.com/n5826ff/19/",
    "tags":[

@@ -33,13 +33,21 @@ const routes = [
     name: 'illust',
     component: () => import('../views/Illust.vue'),
   },
+  {
+    path: '*',
+    name: 'NotFound',
+    component: () => import('../views/NotFound.vue'),
+  },
 ];
 
 const router = new VueRouter({
   mode: 'history',
   base: process.env.BASE_URL,
   routes,
-  scrollBehavior() {
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    }
     return { x: 0, y: 0 };
   },
 });

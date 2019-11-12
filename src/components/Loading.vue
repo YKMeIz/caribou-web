@@ -1,7 +1,7 @@
 <template>
   <div class="container load">
     <div class="loading loading-lg"></div>
-    <p class="text-center lang-zh-hans">努力加載中...</p>
+    <p class="text-center lang-zh-hans">(っ・Д・)っ 努力加載中...</p>
   </div>
 </template>
 
@@ -14,8 +14,8 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .load {
-  height: 100vh;
-  padding-top: 40vh;
+  height: 100vh !important;
+  padding-top: 35vh !important;
 }
 .text-center {
     padding-top: 1rem;

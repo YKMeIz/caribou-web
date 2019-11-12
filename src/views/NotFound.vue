@@ -19,14 +19,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-.empty {
-  height: 100vh;
-}
 .middle {
-  padding-top: 30vh;
-}
-.input-group {
-  max-width: 30rem;
-  margin: auto;
+  padding-top: 23vh;
 }
 </style>

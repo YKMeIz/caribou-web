@@ -1,7 +1,7 @@
 <template>
   <div>
     <loading v-if="!has_data" />
-    <div class="container grid-lg" style="padding-top:2em;padding-bottom:10em" v-if="has_data">
+    <div class="container grid-lg" v-if="has_data">
       <div class="columns">
         <div class="column col-1"></div>
         <div class="column col-10">
@@ -35,7 +35,6 @@
                 <span
                   class="label label-rounded lang-ja"
                   lang="ja"
-                  style="margin: 0.2em 0.1em"
                   v-for="tag in data.tags"
                   :key="tag"
                 >{{ tag }}</span>
@@ -45,7 +44,7 @@
         </div>
         <div class="column col-1"></div>
       </div>
-      <div class="columns" style="padding-top:1em">
+      <div class="columns">
         <div class="column col-1"></div>
         <div class="column col-10">
           <img
@@ -53,7 +52,6 @@
             :key="url"
             :src="url"
             class="img-responsive"
-            style="padding-top:1em"
           />
         </div>
         <div class="column col-1"></div>
@@ -85,7 +83,7 @@ export default {
   },
   methods: {
     fetchData() {
-      fetch(`//localhost:9090/${this.$route.params.pixiv_id}.json`, {
+      fetch(`//${window.location.hostname}/${this.$route.params.pixiv_id}.json`, {
         method: 'GET', // *GET, POST, PUT, DELETE, etc.
         mode: 'cors', // no-cors, *cors, same-origin
         headers: {
@@ -124,4 +122,10 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
+.container, .img-responsive {
+  padding: 2rem 0;
+}
+.label {
+  margin: 0.2em 0.1em;
+}
 </style>
