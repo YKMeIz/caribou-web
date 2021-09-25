@@ -1,24 +1,20 @@
 # caribou-web
 
+Caribou Project is used to search and display Pixiv illustration.
+
 ## Project setup
 ```
 npm install
 ```
+> Requires Node version <= 13
 
 ### Compiles and hot-reloads for development
 ```
 npm run serve
 ```
 
-### Compiles and minifies for production
+### Compiles for production
 ```
 npm run build
 ```
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -11,7 +11,7 @@
       <div class="modal-container">
         <div class="modal-header">
           <a @click="closeModal" class="btn btn-clear float-right" aria-label="Close"></a>
-          <div class="modal-title h5 text-center">快速訪問Pixiv作品信息</div>
+          <div class="modal-title h5 text-center">快速访问Pixiv作品信息</div>
         </div>
         <div class="modal-body">
           <div class="content text-center">
@@ -20,7 +20,7 @@
         </div>
         <div class="modal-footer">
           <div class="text-right gray lang-ja" lang=ja>
-            &copy; 2019 <router-link class="gray" to="/">カリブープロジェクト</router-link>
+            &copy; {{ year }} <router-link class="gray" to="/">カリブープロジェクト</router-link>
           </div>
         </div>
       </div>
@@ -37,6 +37,7 @@ export default {
   data() {
     return {
       modalClass: 'modal',
+      year: new Date().getFullYear(),
     };
   },
   watch: {

@@ -1,7 +1,7 @@
 <template>
   <div class="empty">
     <div class="middle">
-      <p class="empty-title h5 lang-zh-hans">快速訪問Pixiv作品信息</p>
+      <p class="empty-title h5 lang-zh-hans">快速访问Pixiv作品信息</p>
       <div class="empty-action">
         <search />
       </div>

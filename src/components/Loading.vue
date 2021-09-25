@@ -1,7 +1,7 @@
 <template>
   <div class="container load">
     <div class="loading loading-lg"></div>
-    <p class="text-center lang-zh-hans">(っ・Д・)っ 努力加載中...</p>
+    <p class="text-center lang-zh-hans">(っ・Д・)っ 努力加载中...</p>
   </div>
 </template>
 
