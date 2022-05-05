@@ -48,6 +48,7 @@
         <div class="column col-1"></div>
         <div class="column col-10">
           <img
+            alt=""
             v-for="url in data.sources"
             :key="url"
             :src="url"
